@@ -1,6 +1,5 @@
 import os
 import csv
-import numpy
 
 numMonth=0 #total number of months
 profitLoss=0 #net total profit/loss
@@ -30,8 +29,7 @@ with open(filepath,"r") as pybank:
         value=int(row[1]) #update value to reflect current row's profit/change
         profitLoss=profitLoss+value #add profit/loss to the cumulative profit/loss
 
-trackChange=numpy.array(trackChange) 
-avgChange=numpy.sum(trackChange)/len(trackChange) #use numpy to get the average change in profit
+avgChange=sum(trackChange)/len(trackChange) #get the average change in profit
 
 report=f"Financial Analysis\n----------------------------\nTotal Months: {numMonth}\nTotal: \
 ${profitLoss}\nAverage Change: ${round(avgChange,2)}\nGreatest Increase in Profits: \
