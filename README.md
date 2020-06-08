@@ -13,5 +13,5 @@ Completed python (week 3) homework for Monash University Data Analytics Boot Cam
 * Folder structure include -
   * **main.py** - main script to run the PyPoll challenge
     * script creates text summary of candidate votes and election winner
-  * **Resources** - contains csv file used for analysis
-  * **Analysis** - contains text output from analysis
+  * **Resources** folder - contains csv file used for analysis
+  * **Analysis** folder - contains text output from analysis
